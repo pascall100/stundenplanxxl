@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wochen-Stundenplan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="katzerot.jpg" alt="Katze" width="700" height="400">
+
+ 
+
+    <div class="header">
+        <h2>Stundenplan</h2>
+        <form id="student-info">
+          <label for="student-name">Name:</label>
+          <input type="text" id="student-name" name="student-name">
+    
+          <label for="student-class">Klasse:</label>
+          <input type="text" id="student-class" name="student-class">
+        </form>
+      </div>
+
+  <div class="schedule">
+    <table>
+      <thead>
+        <tr>
+          <th>Zeit</th>
+          <th>Montag</th>
+          <th>Dienstag</th>
+          <th>Mittwoch</th>
+          <th>Donnerstag</th>
+          <th>Freitag</th>
+          <th>Samstag</th>
+          <th>Sonntag</th>
+        </tr>
+      </thead>
+      <tbody id="schedule-body">
+        <!-- Stundenplan-Zellen -->
+        <!-- Beispiel: 8:00 - 9:00 -->
+        <tr>
+          <td contenteditable="true">8:00 - 9:00</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+        </tr>
+        <!-- Weitere Stunden hier einfügen -->
+        <!-- Beispiel: 9:00 - 10:00 -->
+        <!-- Beispiel: 10:00 - 11:00 -->
+        <!-- ... -->
+      </tbody>
+    </table>
+    <button id="add-row">plus</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

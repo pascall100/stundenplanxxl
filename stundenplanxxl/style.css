@@ -1,0 +1,61 @@
+/* Basis-Stile */
+
+.button-plus {
+    background-color: red; /* Ändere die Hintergrundfarbe auf Rot */
+    color: white; /* Ändere die Schriftfarbe auf Weiß oder eine andere passende Farbe */
+    /* Weitere Stile nach Bedarf */
+}
+
+.schedule {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #f0f8ff; /* Hellblauer Hintergrund */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Stil für editierbare Zellen */
+  td[contenteditable="true"] {
+    background-color: #f0f0f0;
+    cursor: text;
+  }
+  
+  /* Zentrieren von Elementen */
+  .schedule, th, td {
+    text-align: center;
+  }
+  
+  /* Responsive Anpassungen */
+  @media screen and (max-width: 600px) {
+    /* Stile für kleinere Bildschirme oder Mobilgeräte */
+    
+    /* Verkleinere den Zeilenabstand */
+    th, td {
+      padding: 6px;
+    }
+    
+    /* Verstecke den Zeitbereich auf kleinen Bildschirmen */
+    td:first-child {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    /* Zusätzliche Stile für noch kleinere Bildschirme */
+    
+    /* Verkleinere den Text, um besser in schmale Bildschirme zu passen */
+    th, td {
+      font-size: 12px;
+    }
+  }
+  
